@@ -1,9 +1,9 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
-const PORT = 3000
+const PORT = process.env.PORT
 const app = express()
-const MONGO_URL =`${process.env.MONOGODB_URL}/demo`;
+const MONGO_URL =`${process.env.MONOGO_DB_URL}/demo`;
 const options = [
     cors({
       origin: '*',
